@@ -19,7 +19,7 @@ class Validator(abc.ABC):
             ValidationError: If validation fails.
             TypeError: If a validator is used on an incompatible type
         """
-        ...
+        ...  # pragma: no cover
 
 
 class GeneratorValidator(Validator):
@@ -44,4 +44,4 @@ class GeneratorValidator(Validator):
         Raises:
             ValidationError: If validation fails
         """
-        ...
+        ...  # pragma: no cover
